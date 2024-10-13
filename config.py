@@ -86,7 +86,7 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "
+    "START_IMG_URL", "https://envs.sh/nvp.jpg"
 
 )
 PING_IMG_URL = getenv(
