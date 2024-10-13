@@ -24,42 +24,36 @@ async def start(_, msg):
           InlineKeyboardButton("⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/AAROHI_SUPPORT_CHAT"),
-          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/dil_sagar_121"),
+          InlineKeyboardButton("ʜᴇʟᴘ", url="https://t.me/doreamon_support_chat"),
+          InlineKeyboardButton("ᴏᴡɴᴇʀ", url="https://t.me/legend_mickey"),
         ],
         [
-          InlineKeyboardButton("ᴠ1 ᴍᴜsɪᴄ", url=f"https://github.com/stkeditz/AAROHIxMUSIC"),
-          InlineKeyboardButton("︎ᴠ2 ᴍᴜsɪᴄ", url=f"https://github.com/stkeditz/AAROHIxMUSICv2"),
+          InlineKeyboardButton("ᴍᴜsɪᴄ ʙᴏᴛ 𝟷", url=f"https://t.me/XDz_MUSIC_BOT?startgroup=true"),
+          InlineKeyboardButton("︎ᴍᴜsɪᴄ ʙᴏᴛ 𝟸", url=f"https://t.me/zoyumusicbot?startgroup=true"),
         ],
         [
-          InlineKeyboardButton("ᴍᴀñᴀɢᴇᴍᴇɴᴛ", url=f"https://github.com/BadshahAk/AnsiRobot"),
-          InlineKeyboardButton("ᴄʜᴀᴛ ʙᴏᴛ", url=f"https://github.com/stkeditz/AAROHIxCHATBOT"),
+          InlineKeyboardButton("ᴅᴘ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/DPS_WORLD_XD"),
+          InlineKeyboardButton("ɢʀᴏᴜᴘ ʟɪɴᴋ", url=f"https://t.me/LINK_KA_GROUP"),
         ],
         [
-          InlineKeyboardButton("sᴛʀɪɴɢ ʙᴏᴛ", url=f"https://github.com/stkeditz/AAROHIxSTRINGBOT"),
-          InlineKeyboardButton("ᴅᴘᴢ sᴛᴏʀᴇ", url=f"https://t.me/dil_dpz_stocks"),
+          InlineKeyboardButton("sᴜɪᴘᴘʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/the_incricible"),
+          InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/legend_mickey"),
         ],
         [
-          InlineKeyboardButton("ᴄᴄ ᴄʜᴀᴛ", url="https://t.me/heruko_cc"),
-          InlineKeyboardButton("ᴀʟᴏɴᴇ ɢʀᴏᴜᴘ", url=f"https://t.me/LOVE_FEELINGS_WILL1"),
+          InlineKeyboardButton("ᴀʙᴏᴜᴛ ᴍɪᴄᴋᴇʏ", url="https://t.me/about_godfather"),
+          InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/doreamon_support_chat"),
         ],
         [
-          InlineKeyboardButton("ʟᴀᴛᴇ ɴɪɢʜᴛ︎", url=f"https://t.me/Late_Night_Chatters"),
-          InlineKeyboardButton("ᴅᴜɴɪʏᴀ", url=f"https://t.me/dil_ki_duniya"),
-        ],
-        [
-          InlineKeyboardButton("ᴅɪʟ ғᴇᴇʟɪɴɢs", url=f"https://t.me/Dil_Feelings_Will"),
-          InlineKeyboardButton("ʟᴏᴠᴇ ғᴇᴇʟɪɴɢs", url=f"https://t.me/LOVE_FEELINGS_WILL_121"),
-        ],
-        [
-          InlineKeyboardButton("ᴅɪʟ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/alonegroup121"),
-        ]
+          InlineKeyboardButton("ᴍᴜsɪᴄ ʙᴏᴛ 𝟹", url=f"https://t.me/Arisha_musicbot?startgroup=true"),
+          InlineKeyboardButton("ᴍᴜsɪᴄ ʙᴏᴛ 𝟺", url=f"https://t.me/XDz_MUSIC_BOT?startgroup=true"),
+        ] 
+     
     ]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/d3e94fa78cb489c1effbd.jpg",
+        photo="https://envs.sh/nRb.jpg",
         caption=start_txt,
         reply_markup=reply_markup,
     )
@@ -73,7 +67,7 @@ async def start(_, msg):
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/stkeditz/AAROHIxMUSICv2/contributors")
+        response = await client.get("https://api.github.com/repos/yourtoofan/arisha_music/contributors")
     
     if response.status_code == 200:
         users = response.json()
@@ -83,7 +77,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[ʀᴇᴘᴏ](https://github.com/stkeditz/AAROHIxMUSICv2) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/alonegroup121)
+        text = f"""[ʀᴇᴘᴏ](https://github.com/soja) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/doreamon_support_chat)
 | ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs |
 ----------------
 {list_of_users}"""
