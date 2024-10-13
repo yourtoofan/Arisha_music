@@ -46,13 +46,13 @@ async def userdel(client, message: Message, _):
 
 
 
-GAMDOP = "https://telegra.ph/file/96d4950c132ab4326559b.jpg"
+GAMDOP = "https://envs.sh/nMS.jpg"
 
 @app.on_message(filters.command(["sudolist", "listsudo", "sudoers"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
 async def sudoers_list(client, message: Message):
     keyboard = [[InlineKeyboardButton(" sᴜᴅᴏʟɪsᴛ ", callback_data="check_sudo_list")]]
     reply_markups = InlineKeyboardMarkup(keyboard)
-    await message.reply_photo(photo=GAMDOP, caption="➤ ᴄʜᴇᴄᴋ ᴛᴏ sᴇᴇɴ ᴛʜᴇ ᴍᴀɢɪᴄ ʙʟɪɴɢ ʙʟɪɴɢ ✨.\n\n <u><b>ɴᴏᴛᴇ:</b></u> ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ <a href=\"https://t.me/dil_sagar_121\">ᴅɪʟ❣️</a> ", reply_markup=reply_markups)
+    await message.reply_photo(photo=GAMDOP, caption="➤ ᴄʜᴇᴄᴋ ᴛᴏ sᴇᴇɴ ᴛʜᴇ ᴍᴀɢɪᴄ ʙʟɪɴɢ ʙʟɪɴɢ ✨.\n\n <u><b>ɴᴏᴛᴇ:</b></u> ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ <a href=\"https://t.me/legend_mickey\">ɱιƈƙҽყ❣️</a> ", reply_markup=reply_markups)
 
 
 @app.on_callback_query(filters.regex("^check_sudo_list$"))
